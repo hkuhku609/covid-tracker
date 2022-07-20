@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card {
+  min-width: 12.5rem;
+  border-radius: 5px;
+
+  text-align: center;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+}
+
+.cases {
+  border: 2px solid red;
+  background-color: rgb(255, 203, 203);
+  color: red;
+}
+.deaths {
+  border: 2px solid blue;
+  background-color: rgb(139, 139, 255);
+  color: rgb(0, 0, 152);
+}
+.recovered {
+  border: 2px solid green;
+  background-color: rgb(170, 255, 170);
+  color: green;
+}
+.updateDiv {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 375px) {
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 5px;
+  }
+}
